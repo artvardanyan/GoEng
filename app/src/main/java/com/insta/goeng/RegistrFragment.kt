@@ -24,7 +24,12 @@ class RegistrFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-
+        binding?.clickReg?.setOnClickListener {
+            activity?.supportFragmentManager
+                ?.beginTransaction()
+                ?.add(R.id.container, RegistrationPageFragment())
+                ?.commit()
+        }
     }
 
     override fun onDestroyView() {
