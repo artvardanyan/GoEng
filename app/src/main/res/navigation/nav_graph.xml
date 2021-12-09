@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    app:startDestination="@id/pageFragment">
+
+    <fragment
+        android:id="@+id/pageFragment"
+        android:name="com.insta.goeng.PageFragment"
+        android:label="PageFragment" >
+        <action
+            android:id="@+id/action_pageFragment_to_signFragment"
+            app:destination="@id/signFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signFragment"
+        android:name="com.insta.goeng.SignFragment"
+        android:label="fragment_sign"
+        tools:layout="@layout/fragment_sign" />
+</navigation>
