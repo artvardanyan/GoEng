@@ -1,12 +1,8 @@
 package com.insta.goeng
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.lifecycleScope
-import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.ui.NavigationUI
-import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.insta.goeng.databinding.ActivityMainBinding
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -25,12 +21,8 @@ class MainActivity : AppCompatActivity() {
         lifecycleScope.launch{
             delay(2000)
             supportFragmentManager.beginTransaction()
-                .add(R.id.container, RegistrationPageFragment())
+                .add(R.id.container, RegistrFragment())
                 .commit()
         }
-
-
     }
-
-
 }

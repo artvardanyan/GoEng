@@ -8,11 +8,10 @@ import android.view.ViewGroup
 import androidx.viewpager.widget.ViewPager
 import com.insta.goeng.databinding.FragmentRegistrBinding
 
-class RegistrationPageFragment : Fragment() {
+class RegistrFragment : Fragment() {
 
     private var binding: FragmentRegistrBinding? = null
     private lateinit var mPager: ViewPager
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
