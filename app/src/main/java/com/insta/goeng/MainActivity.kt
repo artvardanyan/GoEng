@@ -24,8 +24,9 @@ class MainActivity : AppCompatActivity() {
 
         lifecycleScope.launch{
             delay(2000)
-            val intent = Intent(this@MainActivity, PageActivity::class.java)
-            startActivity(intent)
+            supportFragmentManager.beginTransaction()
+                .add(R.id.container, RegistrationPageFragment())
+                .commit()
         }
 
 

@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import androidx.viewpager.widget.ViewPager
 import com.insta.goeng.databinding.FragmentRegistrBinding
 
-
 class RegistrationPageFragment : Fragment() {
 
     private var binding: FragmentRegistrBinding? = null
