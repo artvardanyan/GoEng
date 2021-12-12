@@ -9,8 +9,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.insta.goeng.databinding.FragmentRegBinding
 
-const val ARG_OBJECT = "object"
-
 class RegFragment : Fragment() {
 
     private var binding: FragmentRegBinding? = null
@@ -26,10 +24,13 @@ class RegFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding?.userReg?.addTextChangedListener(loginTextWatcher);
-        binding?.email?.addTextChangedListener(loginTextWatcher);
-        binding?.password?.addTextChangedListener(loginTextWatcher);
-        binding?.passwordRepeat?.addTextChangedListener(loginTextWatcher);
+        binding?.apply {
+            userReg.addTextChangedListener(loginTextWatcher)
+            email.addTextChangedListener(loginTextWatcher)
+            password.addTextChangedListener(loginTextWatcher)
+            passwordRepeat.addTextChangedListener(loginTextWatcher)
+        }
+
     }
 
     private val loginTextWatcher: TextWatcher = object : TextWatcher {
