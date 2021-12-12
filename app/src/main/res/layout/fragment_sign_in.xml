@@ -38,6 +38,40 @@
         app:layout_constraintTop_toBottomOf="@+id/userName" />
 
     <ImageView
+        android:id="@+id/frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/ic_frame"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Հիշիր ինձ"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textColor="@color/textColor"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/frame"
+        app:layout_constraintStart_toEndOf="@+id/frame"
+        app:layout_constraintTop_toTopOf="@+id/frame" />
+
+    <TextView
+        android:id="@+id/textOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:text="Մոռացել եմ գաղտնաբառը"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <ImageView
         android:id="@+id/fb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

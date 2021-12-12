@@ -28,15 +28,12 @@ class RegistrFragment : Fragment() {
             activity?.supportFragmentManager
                 ?.beginTransaction()
                 ?.add(R.id.container, RegistrationPageFragment())
+                ?.addToBackStack("false")
                 ?.commit()
         }
 
-        binding?.clickSign?.setOnClickListener {
-            activity?.supportFragmentManager
-                ?.beginTransaction()
-                ?.add(R.id.container, RegistrationPageFragment())
-                ?.commit()
-        }
+
+
     }
 
     override fun onDestroyView() {
